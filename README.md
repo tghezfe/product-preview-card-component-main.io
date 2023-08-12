@@ -64,5 +64,5 @@ I want to focus on the theme of elements and responsive sites, since I feel that
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@tghezfe](https://www.frontendmentor.io/profile/tghezfe)
 
