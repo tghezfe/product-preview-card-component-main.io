@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/tghezfe/product-preview-card-component-main.io)
-- Live Site URL: [Add live site URL here](https://tghezfe.github.io/product-preview-card-component-main.io/)
+- Solution URL: [Solution](https://github.com/tghezfe/product-preview-card-component-main.io)
+- Live Site URL: [URL Site](https://tghezfe.github.io/product-preview-card-component-main.io/)
 
 ## My process
 
