@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  /* Colors */
+
+  --c-dark-cyan: hsl(158, 36%, 37%);
+  --c-cream: hsl(30, 38%, 92%);
+
+  --c-very-dark-blue: hsl(212, 21%, 14%);
+  --c-dark-grayish-blue: hsl(228, 12%, 48%);
+  --c-white: hsl(0, 0%, 100%);
+
+  /* Font */
+  --ff-1: 'Fraunces', serif;
+  --ff-2: 'Montserrat', sans-serif;
+
+  --fs-heading: 1.875rem;
+  --fs-body: 0.875rem;
+
+  --fw-bold: 700;
+  --fw-medium: 500;
+
+  /* Sizes */
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 1rem;
+  --size-4: 2rem;
+  --size-5: 3rem;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--ff-2);
+  background-color: var(--c-cream);
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  padding: var(--size-2) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--c-white);
+  border-radius: var(--size-2);
+  max-width: 90%;
+}
+
+.card__figure-mobile,
+.card__figure-mobile img {
+  border-top-left-radius: var(--size-2);
+  border-top-right-radius: var(--size-2);
+}
+
+.card__figure-desktop {
+  display: none;
+}
+
+.card__figure-desktop,
+.card__figure-desktop img {
+  border-top-left-radius: var(--size-2);
+  border-bottom-left-radius: var(--size-2);
+}
+
+.card__content {
+  padding: calc(var(--size-2) + var(--size-3));
+}
+
+.card__text {
+  margin-bottom: var(--size-3);
+}
+
+.card__category-text {
+  font-family: var(--ff-2);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  color: var(--c-dark-grayish-blue);
+  letter-spacing: var(--size-1);
+  display: block;
+  margin-bottom: var(--size-2);
+}
+
+.card__title {
+  font-family: var(--ff-1);
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-bold);
+  color: var(--c-very-dark-blue);
+  margin-bottom: var(--size-3);
+}
+
+.card__description {
+  font-family: var(--ff-2);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  color: var(--c-dark-grayish-blue);
+}
+
+.card__price {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--size-3);
+}
+
+.card__current-price {
+  font-family: var(--ff-1);
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-bold);
+  color: var(--c-dark-cyan);
+  margin-right: var(--size-3);
+}
+
+.card__old-price {
+  font-family: var(--ff-2);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  color: var(--c-dark-grayish-blue);
+}
+
+.card__btn {
+  background-color: var(--c-dark-cyan);
+  color: var(--c-white);
+  display: flex;
+  justify-content: center;
+  column-gap: calc(var(--size-1) * 3);
+  padding: var(--size-3) 0;
+  width: 100%;
+  border-radius: var(--size-2);
+  font-family: var(--ff-2);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.card__btn:hover {
+  background-color: #2A5340;
+}
+
+@media (min-width: 480px) and (orientation: landscape) {
+  .card {
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .card {
+    width: 600px;
+    display: flex;
+    height: 392px;
+  }
+
+  .card__figure-mobile {
+    display: none;
+  }
+
+  .card__figure-desktop {
+    display: block;
+    width: 50%;
+  }
+
+  .card__figure-desktop img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card__content {
+    width: 50%;
+  }
+}
